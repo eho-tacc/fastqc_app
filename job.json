@@ -1,7 +1,9 @@
 {
-  "name": "{{ app.name }}-test-{{ iso8601_basic_short }}",
-  "appId": "{{ app.name }}-{{ app.version}}",
+  "name": "{{ app.name }}-test",
+  "appId": "{{ username }}-{{ app.name }}-{{ app.version}}",
   "archive": false,
-  "inputs": {},
+  "inputs": {
+    "fastq": "agave://eho.stampede2.storage/apps/fastqc-0.11.9/tests/data_R1_001.fastq"
+  },
   "parameters": {}
 }
